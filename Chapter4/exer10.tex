@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{verbatim}
+
+\begin{document}
+\section{The code for a theorem}
+% This code was taken from the Guide To Latex section 4.5 Theorem-like declarations 
+\begin{verbatim}
+\newtheorem{thereom}{Theorem} \newtheorem{axiom}{Axiom}[chapter]
+...........................................................
+\begin{theorem}[Bolzano--Weierstrass] Every .... \end{theorem}
+\begin{axiom} The natural numbers form .............\end{axiom}
+\end{verbatim}
+\subsection{HelloWorld.java}
+\begin{comment}
+
+This is a trivial java hello world program that I created on the spot.
+It has not been tested that it actually compiles.
+
+\end{comment}
+\begin{verbatim}
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}
+\end{verbatim}
+\end{document}
