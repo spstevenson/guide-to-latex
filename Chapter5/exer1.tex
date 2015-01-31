@@ -1,0 +1,33 @@
+\documentclass{article}
+\begin{document}
+
+	\parbox{20cm}{
+	\footnotesize
+	\mbox{
+	\parbox[b]{8.7 cm}{
+	\begin{minipage}[t]{3.5cm}
+		The first line of this 3.5cm wide minipage or parbox is
+		aligned with the first line of the neighbouring minipage or parbox.
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{5cm}
+		This 5 cm wide minipage or parbox is poistioned so that its top line is 
+		at the same level as that of the box on its left, while its bottom line
+		is even with that of the box on the right. The naive notion that this
+		arrangment may be achieved with the positioning arguments set to
+		t, t and b is incorrect. Why? What would this selection really produce?
+	\end{minipage}
+	
+	\mbox{ }
+	}
+	\hfill
+	\begin{minipage}[b]{3.5cm}
+		The true solution involves the nesting of two of the three structures
+		in an enclosing minipage, which is then separately aligned with the third
+		one.
+		\mbox{}
+	\end{minipage}
+	}
+	}
+
+\end{document}
