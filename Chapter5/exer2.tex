@@ -1,0 +1,15 @@
+\documentclass{article}
+\newsavebox{\warning}
+\savebox{\warning}{\parbox{10cm}{Vertical placement of minipages can lead 
+to surprising results, which may be corrected by the use of dummy
+lines.}}
+
+\begin{document}
+\fbox{\begin{minipage}[t]{10cm}
+\usebox{\warning}
+\end{minipage}}
+
+\vspace{3cm}
+
+\usebox{\warning}
+\end{document}
