@@ -1,0 +1,23 @@
+\documentclass{article}
+
+	\usepackage{eurosym}
+
+	\newsavebox{\kbox}
+	\newsavebox{\kkk}
+
+	\sbox{\kbox}{\framebox[4mm]{\rule{0mm}{3mm}}}
+	\sbox{\kkk}{\usebox{\kbox}\usebox{\kbox}\usebox{\kbox}}
+
+\begin{document}
+	\begin{tabular}{|l|c|c|c|} \hline
+		\multicolumn{4}{|c|}{\rule[-0.3cm]{0mm}{0.8cm} \bfseries
+			Budget Plan 2003--2004} \\
+		\hline \hline
+		\rule[-0.4cm]{0mm}{1cm}Project
+		& \multicolumn{3}{l|}{Nr. \usebox{\kkk}\hspace{0.5cm}
+		\vline\hspace{0.5cm}Name\usebox{\kkk}\usebox{\kkk}\usebox{\kkk}\usebox{\kkk}} \\
+		\hline
+		\multicolumn{1}{|r|}{Year} & 2003 & 2004 & 2005 \\ \cline{2-4}
+		& \euro\ \vline\ \$ & \euro
+	\end{tabular}
+\end{document}
